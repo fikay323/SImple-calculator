@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    background-color: whitesmoke;
+    user-select: none;
+}
+@media (max-width:500px) {
+    .main {
+        width: 80vw !important;
+        margin: 70px auto !important;
+    }
+}
+.main {
+    margin: 10vh auto;
+    padding: 10px 30px; 
+    width: 60vw;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px 2px rgb(182, 177, 177),
+                -2px -2px 15px 2px rgb(182, 177, 177);
+
+}
+.rounded-circle {
+    background-color: rgb(100, 96, 96);
+}
+input {
+    width: 100%;
+    height: 50px;
+    text-align: right;
+    font-weight: bolder;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding-right: 10px;
+    box-shadow: inset 5px 5px 20px rgba(148, 145, 145, 0.5),
+                inset -5px -15px 100px rgba(247, 242, 242, 0.5);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+.buttons, .clear, .equal {
+    display: flex;
+    justify-content: center;
+    padding: 15px 1vw;
+    box-sizing: border-box;
+    border-radius: 10%;
+    box-shadow: 5px 5px 8px #00000020,
+                -5px -5px 8px #ffffff;
+    margin: 1vh 1vw;
+    transition: 1s
+}
+.buttons:active {
+    transform: scaleY(0.9);
+}
+.container {
+    width: 100%;
+    margin-top: 5px;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-self: center;
+}
+.buttons:hover, .clear:hover, .equal:hover {
+    box-shadow: inset 5px 5px 8px rgba(16, 16, 16, .1),
+                inset -5px -5px 8px #fff;
+    transform: scaleY(0.9);
+}
+.boy {
+    background-color: #00000020;
+    color: white;
+    font-weight: 900;
+    font-size: 24px;
+    grid-column: 5/7;
+}
+.meh {
+    font-size: x-small;
+}
+.cont {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.rounded-pill{
+    border: 3px solid rgb(100, 96, 96);
+    margin: 30px auto;
+    width: 60px;
+    height: 26px;
+    padding: 3px;
+    border-radius: 30px;
+}
+.rounded-circle{
+    border: 3px solid rgb(100, 96, 96);
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}

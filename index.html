@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="boy" onclick="change()" class="rounded-pill">
+        <div id="boyd" class="rounded-circle"></div>
+    </div>
+    <div class="main">
+        <input type="text" id="screen">
+        <div class="container">
+
+            <div onclick="" class="buttons open">(</div>
+            <div onclick="" class="buttons close">)</div>
+            <div onclick="pow()" class="equal">x <sup class="meh">2</sup></div>
+            <div onclick="root()" class="equal">√</div>
+            <div class="equal" onclick="del()">DEL</div>
+            <div onclick="screen.value =''" class="clear ac">AC</div>
+
+            <div  onclick="pi()" class="equal">π</div>
+            <div onclick="" class="buttons">9</div>
+            <div onclick="" class="buttons">8</div>
+            <div onclick="" class="buttons">7</div>
+            <div onclick="" class="buttons me">+</div>
+            <div onclick="" class="buttons me">-</div>
+
+            <div onclick="e()" class="equal">e</div>
+            <div onclick="" class="buttons">6</div>
+            <div onclick="" class="buttons">5</div>
+            <div onclick="" class="buttons">4</div>
+            <div onclick=""class="buttons me">/</div>
+            <div onclick=" x()"class="equal me">x</div>
+
+            <div onclick="" class="buttons">.</div>
+            <div onclick="" class="buttons">3</div>
+            <div onclick="" class="buttons">2</div>
+            <div onclick="" class="buttons">1</div>
+            <div onclick="screen.value = eval(screen.value)" class="equal boy">=</div>
+            
+        </div>
+        <div class="cont">
+            <div onclick="sin()" class="equal">sin</div>
+            <div onclick="cos()" class="equal">cos</div>
+            <div onclick="tan()" class="equal">tan</div>
+            <div  onclick="log()" class="equal">log</div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
