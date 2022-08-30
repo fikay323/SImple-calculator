@@ -56,6 +56,7 @@ function change() {
         body.style.backgroundColor = 'whitesmoke'
         body.style.color = 'black'
         screen.style.backgroundColor = 'whitesmoke'
+        screen.style.color = 'black'
     }
     else {
         them.style.marginLeft = 'auto'
