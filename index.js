@@ -1,7 +1,7 @@
-var screen = document.querySelector('#screen');
+let screen = document.querySelector('#screen');
 let body = document.querySelector("body")
 let them = document.getElementById('boyd')
-var button = document.querySelectorAll('.buttons');
+let button = document.querySelectorAll('.buttons');
 let big = document.querySelector(".rounded-pill")
 let small = document.querySelector(".rounded-circle")
 // for (item of button) 

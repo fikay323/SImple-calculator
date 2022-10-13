@@ -1,15 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    box-sizing: 0;
     background-color: whitesmoke;
     user-select: none;
-}
-@media (max-width:500px) {
-    .main {
-        width: 80vw !important;
-        margin: 70px auto !important;
-    }
 }
 .main {
     margin: 10vh auto;
@@ -19,6 +12,10 @@ body {
     box-shadow: 2px 2px 15px 2px rgb(182, 177, 177),
                 -2px -2px 15px 2px rgb(182, 177, 177);
 
+}
+.dot1 {
+    font-weight: 700;
+    font-size: 20px;
 }
 .rounded-circle {
     background-color: rgb(100, 96, 96);
@@ -70,7 +67,7 @@ input {
     color: white;
     font-weight: 900;
     font-size: 24px;
-    grid-column: 5/7;
+    /* grid-column: 5/7; */
 }
 .meh {
     font-size: x-small;
@@ -94,3 +91,42 @@ input {
     height: 20px;
     border-radius: 100%;
 }
+
+@media(max-width:450px) {
+    .main {
+        /* width: 100vw; */
+    }
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .f1-col {
+        grid-column: 1/2;
+    }
+    .s-col {
+        grid-column: 2/3;
+    }
+    .t-col {
+        grid-column: 3/4;
+    }
+    .f2-col {
+        grid-column: 4/5;
+    }
+    .f1-row {
+        grid-row: 1/2;
+    }
+    .s-row {
+        grid-row: 2/3;
+    }
+    .t-row {
+        grid-row: 3/4;
+    }
+    .f2-row {
+        grid-row: 4/5;
+    }
+    .s2-row {
+        grid-row: 5/6;
+    }
+    .s3-row {
+        grid-row: 6/7;
+    }
+} 
